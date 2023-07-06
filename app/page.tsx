@@ -1,7 +1,7 @@
 'use client';
 import Pricing from './pricing/page';
-import {Text,Stack,Flex,Box} from '@chakra-ui/react'
-import { Features } from './Components/page';
+import {Text,Stack,Box} from '@chakra-ui/react'
+import Features from './Components/page';
 export default function Page(){
   return(
     <Box className="box">

@@ -12,8 +12,8 @@ interface FeatureProps extends StackProps {
 function Feature(props: FeatureProps) {
   const { icon, children, ...rest } = props;
   return (
-    <HStack {...rest} spacing='6' align='start'>
-      <Icon as={icon} boxSize={['8', '8', '12']} ml={'30'} mt={'-10'}/>
+    <HStack {...rest} spacing='6' align='flex-start'> {/* Updated 'align' value */}
+      <Icon as={icon} boxSize={['8', '8', '12']} ml='30' mt='-10' />
       <Text textAlign='left' fontSize='lg' fontWeight='bold'>
         {children}
       </Text>
@@ -21,7 +21,7 @@ function Feature(props: FeatureProps) {
   );
 }
 
-export function Features() {
+export default function Features() {
   return (
     <Box maxW='1024px' m='auto' pt='60px' pb='8' as='section'>
       <Stack
