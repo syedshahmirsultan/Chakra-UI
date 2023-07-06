@@ -1,3 +1,4 @@
+"use client"
 import { Box, HStack, Icon, Stack, StackProps, Text } from '@chakra-ui/react';
 import {
   HassleFreeIcon,
